@@ -7,6 +7,7 @@ const savetask=(e)=>{
    let li=document.createElement('li');
    li.className='gp';
    li.innerText=input.value;
+       console.log("Input value is:", input.value); // <-- Add this line
    let bt1=document.createElement('button');
  bt1.innerText="Delete";
  bt1.className="dt";
@@ -24,5 +25,6 @@ const savetask=(e)=>{
  }
 list.addEventListener('click',removeTodo)
 form.addEventListener('submit',savetask);
+
 
 
